@@ -50,7 +50,7 @@ This project includes the following JavaScript functionality:
 
 ## 💻 Live
 
-Here is a working live demo: <!-- add later  -->
+Here is a working [live demo](https://takatamasu.github.io/ask-yoda-app/)
 
 <a id="credits"></a>
 
