@@ -1,0 +1,113 @@
+@mixin queries {
+	@media (650px <= width <= 1050px) {
+		.wrapper {
+			.yoda-container {
+				.sound-square {
+					width: 250px;
+					height: 250px;
+					top: 20px;
+				}
+			}
+		}
+	}
+
+	@media (width >= 650px) {
+		.wrapper {
+			h1 {
+				font-size: 4rem;
+			}
+
+			.buttons {
+				button {
+					font-size: 1.6em;
+				}
+			}
+		}
+	}
+
+	@media (width >= 750px) {
+		.wrapper {
+			.yoda-container {
+				width: 80%;
+			}
+		}
+	}
+
+	@media (width >= 850px) {
+		.wrapper {
+			h1 {
+				font-size: 4.1rem;
+			}
+
+			.yoda-container {
+				width: 70%;
+			}
+
+			label {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	@media (width >= 1050px) {
+		.wrapper {
+			h1 {
+				padding: 10px 100px;
+				font-size: 5.3rem;
+			}
+			.yoda-container {
+				width: 95%;
+
+				.answer {
+					position: absolute;
+					left: 40%;
+					bottom: 50%;
+					padding: 40px 60px;
+					max-width: 50%;
+					font-size: 2em;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.yoda-solo {
+					display: none;
+				}
+
+				.yoda-lightsaber {
+					display: block;
+				}
+
+				.sound-square {
+					width: 300px;
+					height: 300px;
+					left: 20%;
+				}
+			}
+
+			label {
+				margin-top: -20px;
+				font-size: 1.5rem;
+			}
+
+			input {
+				width: 70%;
+				font-size: 1.8em;
+			}
+
+			.buttons {
+				.info {
+					padding: 20px;
+					min-height: 80px;
+					font-size: 2.2em;
+				}
+				button {
+					padding: 17px 34px;
+					margin: 10px 25px;
+					font-size: 1.7em;
+				}
+			}
+		}
+	}
+}

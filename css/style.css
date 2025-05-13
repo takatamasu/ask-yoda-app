@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Starjhol";
+  src: url(../fonts/Starjhol.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  background-image: url("../img/pexels-larsmai-9190535.jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  padding: 10px 40px 20px 40px;
+}
+.wrapper h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Starjhol";
+  color: #fdef27;
+}
+.wrapper .yoda-container {
+  position: relative;
+  width: 100%;
+}
+.wrapper .yoda-container img {
+  width: 66%;
+  margin: 0 auto;
+}
+.wrapper .yoda-container .yoda-solo {
+  display: block;
+}
+.wrapper .yoda-container .yoda-lightsaber {
+  display: none;
+}
+.wrapper .yoda-container .sound-square {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wrapper .yoda-container .answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 80px;
+  padding: 20px 40px;
+  margin: 0 50px;
+  background-color: rgba(136, 162, 80, 0.62);
+  color: #000;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.7em;
+  visibility: hidden;
+}
+.wrapper label {
+  text-align: center;
+  margin-top: 20px;
+  color: #dbdbda;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+.wrapper input {
+  width: 80%;
+  padding: 0.6rem;
+  background-color: #d8d8d8;
+  border: 3px solid #1c9a19;
+  font-size: 1.8em;
+  border-radius: 5px;
+}
+.wrapper .buttons {
+  text-align: center;
+}
+.wrapper .buttons .info {
+  padding: 15px;
+  min-height: 55px;
+  font-size: 1.6em;
+  color: #fdef27;
+}
+.wrapper .buttons button {
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 12.5px 25px;
+  margin: 5px 15px;
+  font-size: 1.5em;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #88a250;
+  color: #88a250;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+.wrapper .buttons button:hover {
+  background-color: rgba(209, 255, 176, 0.5);
+  box-shadow: 0px 0px 20px #88a250;
+  color: black;
+}
+
+@media (650px <= width <= 1050px) {
+  .wrapper .yoda-container .sound-square {
+    width: 250px;
+    height: 250px;
+    top: 20px;
+  }
+}
+@media (width >= 650px) {
+  .wrapper h1 {
+    font-size: 4rem;
+  }
+  .wrapper .buttons button {
+    font-size: 1.6em;
+  }
+}
+@media (width >= 750px) {
+  .wrapper .yoda-container {
+    width: 80%;
+  }
+}
+@media (width >= 850px) {
+  .wrapper h1 {
+    font-size: 4.1rem;
+  }
+  .wrapper .yoda-container {
+    width: 70%;
+  }
+  .wrapper label {
+    font-size: 1.5rem;
+  }
+}
+@media (width >= 1050px) {
+  .wrapper h1 {
+    padding: 10px 100px;
+    font-size: 5.3rem;
+  }
+  .wrapper .yoda-container {
+    width: 95%;
+  }
+  .wrapper .yoda-container .answer {
+    position: absolute;
+    left: 40%;
+    bottom: 50%;
+    padding: 40px 60px;
+    max-width: 50%;
+    font-size: 2em;
+  }
+  .wrapper .yoda-container img {
+    width: 100%;
+  }
+  .wrapper .yoda-container .yoda-solo {
+    display: none;
+  }
+  .wrapper .yoda-container .yoda-lightsaber {
+    display: block;
+  }
+  .wrapper .yoda-container .sound-square {
+    width: 300px;
+    height: 300px;
+    left: 20%;
+  }
+  .wrapper label {
+    margin-top: -20px;
+    font-size: 1.5rem;
+  }
+  .wrapper input {
+    width: 70%;
+    font-size: 1.8em;
+  }
+  .wrapper .buttons .info {
+    padding: 20px;
+    min-height: 80px;
+    font-size: 2.2em;
+  }
+  .wrapper .buttons button {
+    padding: 17px 34px;
+    margin: 10px 25px;
+    font-size: 1.7em;
+  }
+}

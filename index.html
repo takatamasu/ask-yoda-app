@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="author" content="Agnieszka S." />
+    <meta name="keywords" content="Ask Yoda, Magic 8Ball project" />
+    <meta name="description" content="Ask Yoda project" />
+
+    <title>Ask Yoda</title>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">pws
+
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1>ask yoda</h1>
+
+        <div class="yoda-container">
+            <img src="../img/yoda-solo.webp" class="yoda-solo" alt="Yoda from Star Wars">
+            <img src="../img/yoda-with-lightsaber.webp" class="yoda-lightsaber" alt="Yoda holding green lightsaber">
+            <div class="sound-square"></div>
+            <p class="answer"></p>
+        </div>
+
+        <label for="question">Your question, ask. Yoda will answer:</label>
+        <input type="text" id="question" name="question" class="label">
+
+        <div class="buttons">
+            <p class="info"></p>
+            <button class="clear-btn">Clear</button>
+            <button class="ask-btn">Ask</button>
+        </div>
+
+    </div>
+
+
+    <!-- javascript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
