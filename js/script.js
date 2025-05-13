@@ -1,5 +1,5 @@
 const yodaFaceDiv = document.querySelector('.sound-square')
-const yodaLaugh = new Audio('../sounds/yoda_laugh.mp3')
+const yodaLaugh = new Audio('./sounds/yoda_laugh.mp3')
 
 const askBtn = document.querySelector('.ask-btn')
 const clearBtn = document.querySelector('.clear-btn')
