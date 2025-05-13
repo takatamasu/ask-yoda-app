@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   max-height: 100vh;
   font-family: "Roboto Slab", serif;
-  background-image: url("../img/pexels-larsmai-9190535.jpg");
+  background-image: url("../img/bcg_medium.jpg");
   background-size: cover;
 }
 
@@ -121,6 +121,11 @@ body {
   color: black;
 }
 
+@media (width >= 550px) {
+  body {
+    background-image: url("../img/bcg_big.jpg");
+  }
+}
 @media (650px <= width <= 1050px) {
   .wrapper .yoda-container .sound-square {
     width: 250px;
@@ -199,5 +204,10 @@ body {
     padding: 17px 34px;
     margin: 10px 25px;
     font-size: 1.7em;
+  }
+}
+@media (width >= 1920px) {
+  body {
+    background-image: url("../img/bcg_large.jpg");
   }
 }
