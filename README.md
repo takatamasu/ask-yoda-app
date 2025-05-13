@@ -5,7 +5,6 @@ A small front-end app where you can ask Master Yoda any question, and receive a 
 ## 📷 Preview
 
 ![Ask Yoda Website Screenshot](./screenshots/preview.png)
-![Ask Yoda Mobile Screenshot](./screenshots/preview-phone.png)
 
 ## Table of contents
 
